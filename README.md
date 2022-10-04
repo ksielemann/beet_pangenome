@@ -37,7 +37,7 @@ As input, a tab separated file with chromosome/contig name (first column), posit
 (Example line: chr1   1   0   0)
 
 
-The coverage and variance thresholds allow the identification of regions with properties of interest. A 'max_cov' threshold of 0.01 means that the maximal coverage in a window is 1% of the mean coverage over the whole chromosome/contig in a long read-based assembly.
+The coverage and variance thresholds allow the identification of regions with properties of interest. A 'max_cov' threshold of 0.01 means that the maximal allowed coverage in a window is 1% of the mean coverage over the whole chromosome/contig in a long read-based assembly.
 For larger genomes > 1 Gbp it is recommended to split the file into two smaller files.
 
 
