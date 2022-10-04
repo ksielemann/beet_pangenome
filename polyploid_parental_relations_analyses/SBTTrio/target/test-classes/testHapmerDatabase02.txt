@@ -1,0 +1,4 @@
+ACGTA   15
+CCGCC   1
+GACTA   500
+TATAT   23

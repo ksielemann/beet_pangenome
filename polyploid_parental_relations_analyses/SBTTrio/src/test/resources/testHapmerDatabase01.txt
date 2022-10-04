@@ -1,0 +1,4 @@
+AAAAA   234
+ACGTA   1
+ATATC   14
+CGTAC   1
