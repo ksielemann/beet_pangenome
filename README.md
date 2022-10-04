@@ -46,4 +46,4 @@ Example command to identify zero coverage regions:
 python3 identify_lost_and_conserved_regions/find_regions_of_interest.py  --output_dir /out/name/ --cov_var /in/coverage_and_variants.txt --mode lost --assembly_type long --max_cov 0.01 --var 0 --window_size 2500 --shift 150
 ~~~
 
-The identified regions can then be investigated for overlapping genes.
+The identified regions (extended_regions.txt) can then be investigated for overlapping genes.
