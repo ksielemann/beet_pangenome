@@ -2,14 +2,14 @@
 
 This repository contains scripts relevant for the investigation of the beet pangenome for:
 
-## A) employing *k*-mer- and gene-based methods to resolve the parental relationships of the tetraploid wild beet *B. corolliflora* and
+### A) employing *k*-mer- and gene-based methods to resolve the parental relationships of the tetraploid wild beet *B. corolliflora* and
 
-## B) identifying regions not present in the cultivated sugar beet, but associated with traits with relevance for breeding.
+### B) identifying regions not present in the cultivated sugar beet, but associated with traits with relevance for breeding.
 
 
 ------------------------------------
 
-### A) employing *k*-mer- and gene-based methods to resolve the parental relationships of the tetraploid wild beet *B. corolliflora* and
+### A)
 
 Five different approaches were developed to investigate the parental relationships of the tetraploid wild beet *B. corolliflora*. The following scripts are provided in this repository:
 
@@ -26,7 +26,9 @@ generate_artificial_reads.py
 map_artificial_reads_distributed.py
 
 
-### B) The script 'find_regions_of_interest.py' allows the identification of zero coverage regions as well as the identification of conserved regions in a species of interest.
+### B) 
+
+The script 'find_regions_of_interest.py' allows the identification of zero coverage regions as well as the identification of conserved regions in a species of interest.
 
 As input, a tab separated file with chromosome/contig name (first column), position (second column), coverage at this position (third column) and variant (1) vs. no variant (0) at this position (fourth column) is required.
 
