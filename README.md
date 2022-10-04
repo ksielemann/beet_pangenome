@@ -13,7 +13,7 @@ and
 
 ### A)
 
-Five different approaches were developed to investigate the parental relationships of the tetraploid wild beet *B. corolliflora*. The following scripts are provided in this repository:
+Different approaches were developed to investigate the parental relationships of the tetraploid wild beet *B. corolliflora*. The following scripts are provided in this repository:
 
 - trio binning java application:
 /polyploid_parental_relations_analyses/SBTTrio/out/artifacts/trio_binning/SBTTrio.jar
@@ -38,10 +38,10 @@ As input, a tab separated file with chromosome/contig name (first column), posit
 
 
 The coverage and variance thresholds allow the identification of regions with properties of interest. A 'max_cov' threshold of 0.01 means that the maximal allowed coverage in a window is 1% of the mean coverage over the whole chromosome/contig in a long read-based assembly.
-For larger genomes > 1 Gbp it is recommended to split the file into two smaller files.
+For larger genomes > 1 Gbp it is recommended to split the input file into two smaller files.
 
 
-Example to identify zero coverage regions:
+Example command to identify zero coverage regions:
 ~~~
 python3 identify_lost_and_conserved_regions/find_regions_of_interest.py  --output_dir /out/name/ --cov_var /in/coverage_and_variants.txt --mode lost --assembly_type long --max_cov 0.01 --var 0 --window_size 2500 --shift 150
 ~~~
