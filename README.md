@@ -16,16 +16,16 @@ and
 Five different approaches were developed to investigate the parental relationships of the tetraploid wild beet *B. corolliflora*. The following scripts are provided in this repository:
 
 - trio binning java application:
-/trio_binning/SBTTrio.jar
+/polyploid_parental_relations_analyses/SBTTrio/out/artifacts/trio_binning/SBTTrio.jar
 
 - k-mer fingerprinting java application:
-/fingerprinting/SBTTrio.jar
+/polyploid_parental_relations_analyses/SBTTrio/out/artifacts/fingerprinting/SBTTrio.jar
 
 - generate artificial reads:
-generate_artificial_reads.py
+/polyploid_parental_relations_analyses/generate_artificial_reads.py
 
 - artificial read mapping:
-map_artificial_reads_distributed.py
+/polyploid_parental_relations_analyses/map_artificial_reads_distributed.py
 
 
 ### B) 
