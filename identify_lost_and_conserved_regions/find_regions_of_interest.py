@@ -48,8 +48,8 @@ def find_regions(args, contig, cov_var_dic, cov_t_max, var_t, cov_t_min, window_
 	# calculate first window
 	start_pos = 0
 	end_pos = window_size
-	print(end_pos)
-	print(len(cov))
+	#print(end_pos)
+	#print(len(cov))
 	for i in range(start_pos, end_pos):
 		
 		windows_total_coverage += int(cov[i])
