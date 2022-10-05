@@ -48,6 +48,8 @@ def find_regions(args, contig, cov_var_dic, cov_t_max, var_t, cov_t_min, window_
 	# calculate first window
 	start_pos = 0
 	end_pos = window_size
+	print(end_pos)
+	print(len(cov))
 	for i in range(start_pos, end_pos):
 		
 		windows_total_coverage += int(cov[i])
@@ -221,7 +223,7 @@ def main(args):
 			cov = [float(entry[0]) for entry in dic[contig]]
 			var = [float(entry[1]) for entry in dic[contig]]
 			
-			if len(cov) <= args.window_size or len(var) <= args.window_size:
+			if len(cov) <= window_size or len(var) <= window_size:
 				continue
 			
 			# calculate thresholds
@@ -233,17 +235,22 @@ def main(args):
 				cov_t_min = round(sum(cov)/len(cov) * args.min_cov_percentage)
 			else:
 				cov_t_min = None
-			find_regions(args, contig.strip(), dic, cov_t_max, var_t, cov_t_min, args.window_size, shift)
+			find_regions(args, contig.strip(), dic, cov_t_max, var_t, cov_t_min, window_size, shift)
 			
 	# for short read assemblies: use the overall means
 	else:
 		cov_t_max = cov_sum/count * args.max_cov_percentage
 		var_t = var_sum/count * args.var_percentage
 		if args.mode == "conserved":
-				cov_t_min = sum(cov)/len(cov) * args.min_cov_percentage
+				cov_t_min = cov_sum/count * args.min_cov_percentage
 		else:
 			cov_t_min = None
-		for contig in contig_names:	
+		for contig in contig_names:
+			cov = [float(entry[0]) for entry in dic[contig]]
+			var = [float(entry[1]) for entry in dic[contig]]
+			
+			if len(cov) <= window_size or len(var) <= window_size:
+				continue
 			find_regions(args, contig.strip(), dic, cov_t_max, var_t, cov_t_min, window_size, shift)
 	
 	
