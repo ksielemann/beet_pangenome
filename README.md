@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8090594.svg)](https://doi.org/10.5281/zenodo.8090594)
+
 # Pangenome of cultivated beet and crop wild relatives
 
 This repository contains scripts relevant for the investigation of the beet pangenome for:
