@@ -2,7 +2,7 @@
 
 # Genomic data of sugar beet and crop wild relatives reveal parental relationships of a tetraploid wild beet
 
-This repository contains scripts relevant for the investigation of the beet pangenome for:
+This repository contains scripts relevant for
 
 ### employing *k*-mer- and gene-based methods to resolve the parental relationships of the tetraploid wild beet *B. corolliflora*
 
