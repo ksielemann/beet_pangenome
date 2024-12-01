@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8090594.svg)](https://doi.org/10.5281/zenodo.8090594)
 
 # Genomic data of sugar beet and crop wild relatives reveal parental relationships of a tetraploid wild beet
 
